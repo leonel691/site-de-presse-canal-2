@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* debutons notre code par la version responsive*/
 *{
     margin:0;
@@ -8,6 +9,10 @@
 }
 /* variables definis */
 :root{
+    --barre-color:#618264;
+    --font-opens:"Open Sans", serif;
+    --font-ibm:"IBM Plex Sans Hebrew", serif;
+    
 
 }
 html{
@@ -23,13 +28,76 @@ nav{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding-bottom:4rem ;
 }
 nav>ul{
     display: none;
 }
-.logo{
-
+hr{
+    border: 1px solid black;
 }
-.menu{
+
+
+.herosection{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+.herosection_nganou{
+    width: 40rem;
+    height: 40rem;
+    background: linear-gradient(white,black);
+}
+.herosection_anexe{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.herosection_anexe_title{
+    display: flex;
+    align-items: end;
+    gap: 0.8rem;
+    margin: 1rem;
+}
+.herosection_anexe_title>.barre_verte{
+    width: 1rem;
+    height: 3.1rem;
+    background-color: var(--barre-color);
+}
+.herosection_anexe_title>h1{
+    font-family: var(--font-ibm);
+    font-size: 1.6rem;
+    font-weight: 600;
+
+   
+}
+.herosection_anexe_actu{
+    display: flex;
+    flex-direction: column;
+    gap: 3.7rem;
+    padding: 1rem;
+}
+.herosection_anexe_actu_textimg{
+    display: flex;
+    gap: 3rem;
+}
+.section_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.section_text>h1{
+    font-family: var(--font-ibm);
+font-size: 1.6rem;
+font-weight: 600;
+text-align: left;
+}
+.section_text>p{
+    font-family: var(--font-opens);
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: left;
+
 
 }
