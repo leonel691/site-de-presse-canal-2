@@ -1,0 +1,35 @@
+
+
+/* debutons notre code par la version responsive*/
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+/* variables definis */
+:root{
+
+}
+html{
+    font-size: 10px;
+}
+body{
+    overflow-x:hidden ;
+    width: 100vw;
+    height: 100%;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>ul{
+    display: none;
+}
+.logo{
+
+}
+.menu{
+
+}
