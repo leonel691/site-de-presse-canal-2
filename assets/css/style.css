@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* debutons notre code par la version responsive*/
@@ -15,8 +14,6 @@
     --font-opens:"Open Sans", serif;
     --font-ibm:"IBM Plex Sans Hebrew", serif;
     --font-inter:"Inter", serif;
-    
-
 }
 html{
     font-size: 10px;
@@ -39,8 +36,6 @@ nav>ul{
 hr{
     border: 1px solid black;
 }
-
-
 .herosection{
     display: flex;
     flex-direction: column;
@@ -90,9 +85,9 @@ hr{
 }
 .section_text>h1{
     font-family: var(--font-ibm);
-font-size: 1.6rem;
-font-weight: 600;
-text-align: left;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: left;
 }
 .section_text>p{
     font-family: var(--font-opens);
@@ -105,7 +100,7 @@ text-align: left;
     display: flex;
     overflow-x: scroll;
     gap:4.3rem;
-    padding: 1rem;
+    padding: 5rem 1rem;
     cursor: pointer;
 }
 .listdefilante1_element{
@@ -136,7 +131,7 @@ text-align: left;
     display: flex;
     flex-direction: column;
     gap:2.3rem;
-    padding: 1rem;
+    padding: 0rem 1rem 2rem 1rem;
     justify-content: center;
 }
 .section_video>.text_video1{
@@ -159,14 +154,11 @@ text-align: left;
     align-items: center;
     gap:2.4rem;
 }
-
-
-
 .canal_matin_text{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    padding:0rem 2.1rem;
+    padding:0rem 2.7rem;
 }
 .canal_matin_text>h1{
     color: var(--barre-color);
@@ -187,4 +179,169 @@ text-align: left;
     gap: 2.7rem;
     justify-content: start;
 }
+/* ici debute la partie contenat une bande d'images juste après la section canal2  */
+.listdefilante2{
+    display: flex;
+    overflow-x: scroll;
+    gap:4.3rem;
+    padding: 5rem 1rem;
+    cursor: pointer;
+}
+.listdefilante2_element{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.text>p{
+    color: var(--text-color);
+    font-family: var(--font-inter);
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+}
+.text>h1{
+    font-family: var(--font-ibm);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+/* cette parci est celle reservé a la section c'est comment */
+.section_comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2.4rem;
+}
+.comment_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding:0rem 2.7rem;
+}
+.comment_text>h1{
+    color: var(--barre-color);
+    font-family: var(--font-ibm);
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: left;
+}
+.comment_text>p{
+    color: #000E01;
+    font-family: var(--font-opens);
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: left;
+}
+.comment_text>div{
+    display: flex;
+    gap: 2.7rem;
+    justify-content: start;
+}
+/* ceci est la partie de l'image de la marque sm */
+.actu_sm{
+    flex-direction: column;
+    gap: 2.6rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 95%; 
+}
+.text_bar{
+    width: 100vw;
+    /* justify-content: start; */
+    gap: 2rem;
+    padding-left: 1.2rem;
+    display: flex;
+}
+.text_bar>.green_bar1{
+   width: 1.2rem ;
+   height: 4rem;
+   background-color: var(--barre-color);
+}
+.text_bar>.green_bar2{
+    display: none;
+}
+.text_bar>span{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--barre-color);
+    font-family: var(--font-ibm);
+}
+.actu_sm>.img_sm{
+    background-image: url(../images/img_sm_mediaQ.svg);
+    width: 100%;
+    align-items: start;
+    justify-content: start;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 24rem;
+    display: flex;
+}
+/* ici debute la partie contenat une bande d'images juste après la section image sm  */
+.listdefilante3{
+    display: flex;
+    overflow-x: scroll;
+    gap:4.3rem;
+    padding: 5rem 1rem;
+    cursor: pointer;
+}
+.listdefilante3_element{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.text>p{
+    color: var(--text-color);
+    font-family: var(--font-inter);
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+}
+.text>h1{
+    font-family: var(--font-ibm);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+/* ceci est notre footer */
+.last_part{
+    height: 25.4rem;
+    background-color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+.last_part>div{
+    display: flex;
+    width: 16rem;
+    height: 2.6rem;
+    justify-content: center;
+    gap: 2.45rem;
+}
+.last_image{
+    width: 15rem;
+    display: flex;
+    height: 10.6rem;
+}
+.last_part>div>img{
+    width: 2.5rem;
+    height:2.5rem ;
+    align-items: end;
+    display: flex;
+
+}
+
 
