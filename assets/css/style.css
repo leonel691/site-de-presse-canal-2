@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* debutons notre code par la version responsive*/
 *{
     margin:0;
@@ -10,8 +11,10 @@
 /* variables definis */
 :root{
     --barre-color:#618264;
+    --text-color:#79AC78;
     --font-opens:"Open Sans", serif;
     --font-ibm:"IBM Plex Sans Hebrew", serif;
+    --font-inter:"Inter", serif;
     
 
 }
@@ -69,8 +72,6 @@ hr{
     font-family: var(--font-ibm);
     font-size: 1.6rem;
     font-weight: 600;
-
-   
 }
 .herosection_anexe_actu{
     display: flex;
@@ -98,6 +99,35 @@ text-align: left;
     font-size: 1.2rem;
     font-weight: 400;
     text-align: left;
-
-
 }
+/*ici debute la partie contenat une bande d'images juste après la herosection */
+.listdefilante1{
+    display: flex;
+    overflow-x: scroll;
+    gap:4.3rem;
+    padding: 1rem;
+}
+.listdefilante1_element{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.text>p{
+    color: var(--text-color);
+    font-family: var(--font-inter);
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+}
+.text>h1{
+    font-family: var(--font-ibm);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
